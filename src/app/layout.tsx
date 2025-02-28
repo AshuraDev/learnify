@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Open_Sans } from "next/font/google";
+import { Open_Sans, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
-const playfair_Display = Playfair_Display({
-  variable: "--font-playfair_Display",
+const openSans = Open_Sans({
   subsets: ["latin"],
+  variable: "--font-OpenSans",
 });
-
-const open_Sans = Open_Sans({
-  variable: "--font-open_Sans",
+const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
+  variable: "--font-playfairDisplay",
 });
 
 export const metadata: Metadata = {
@@ -23,12 +22,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${playfair_Display.variable} ${open_Sans.variable} font-openSans`}
-      >
-        {children}
-      </body>
+    <html lang="fr">
+      <body className={`${openSans.variable} ${playfairDisplay.variable} font-openSans`}>{children}</body>
     </html>
   );
 }

@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --font-playfairDisplay: var(--font-playfair_Display);
-  --font-openSans: var(--font-open_Sans);
+  --font-openSans: var(--font-openSans);
+  --font-playfairDisplay: var(--font-playfairDisplay);
 }
 
 :root {
