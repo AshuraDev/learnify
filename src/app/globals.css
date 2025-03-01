@@ -8,6 +8,7 @@
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
   --color-primary-muted: var(--primary-muted);
+  --color-muted: var(--muted);
 }
 
 :root {
@@ -16,6 +17,7 @@
   --primary: #006af1;
   --secondary: #ffa722;
   --primary-muted: #bedbff;
+  --muted: #d9d9d9;
   /* --secondary-muted: #FFA722; */
 }
 
@@ -26,6 +28,7 @@
     --primary: #006af1;
     --secondary: #ffa722;
     --primary-muted: #bedbff;
+    --muted: #d9d9d9;
   }
 }
 

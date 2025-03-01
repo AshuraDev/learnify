@@ -8,8 +8,8 @@ export const Button = ({ text, variant = "defaut" }: ButtonProps) => {
     <button
       className={
         variant === "defaut"
-          ? "flex items-center font-openSans justify-center bg-secondary p-2.5 text-foreground rounded-4xl text-base font-normal"
-          : "flex items-center font-openSans justify-center bg-transparent p-2.5 text-secondary rounded-4xl text-base font-normal border border-secondary"
+          ? "flex items-center font-openSans justify-center bg-secondary p-2.5 text-foreground rounded-4xl text-sm  md:text-base font-normal"
+          : "flex items-center font-openSans justify-center bg-transparent p-2.5 text-secondary rounded-4xl text-sm md:text-base  font-normal border border-secondary"
       }
     >
       {text}
