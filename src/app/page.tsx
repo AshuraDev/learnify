@@ -1,3 +1,5 @@
+import { Hero } from "@/components/hero";
+
 export default function HomePage() {
-  return <main className="max-w-7xl m-auto font-playfairDisplay font-bold">Hello world!</main>;
+  return <main className="max-w-7xl m-auto px-2 lg:px-0 font-bold"><Hero/></main>;
 }

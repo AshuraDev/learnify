@@ -1,8 +1,8 @@
-import { Button } from "./button";
+import { Button } from "@/components/button";
 
 export const Navbar = () => {
   return (
-    <nav className="max-w-7xl m-auto">
+    <nav className="max-w-7xl px-2 lg:px-0 m-auto">
       <div className="w-full h-full flex items-center justify-between py-6">
         <span className="font-playfairDisplay font-extrabold text-2xl">
           Learnify
