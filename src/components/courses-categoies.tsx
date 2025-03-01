@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { Button } from "./button";
 
 export const CoursesCategories = () => {
   const categories = [
@@ -37,13 +38,14 @@ export const CoursesCategories = () => {
 
   return (
     <section className="w-full py-44">
-      <div className="w-full text-center mb-14">
+      <div className="mx-auto text-center mb-14">
         <h2 className="font-playfairDisplay font-bold text-2xl md:text-4xl">
-          Pourquoi apprendre<span className="text-secondary"> avec nous </span>?
+          Trouve le cours qui te
+          <span className="text-secondary"> correspond </span>
         </h2>
         <p className="font-normal text-sm md:text-base">
-          Nous mettons l&apos;accent sur une expérience d&apos;apprentissage
-          engageante, flexible et reconnue.
+          Découvre une large sélection de formations pour apprendre et
+          progresser à ton rythme.
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-11">
@@ -61,11 +63,18 @@ export const CoursesCategories = () => {
               />
             </div>
             <div className="w-full">
-              <h3 className="font-semibold text-sm md:text-base">{category.title}</h3>
-              <p className="font-normal text-xs md:text-sm">{category.course}</p>
+              <h3 className="font-semibold text-sm md:text-base">
+                {category.title}
+              </h3>
+              <p className="font-normal text-xs md:text-sm">
+                {category.course}
+              </p>
             </div>
           </div>
         ))}
+      </div>
+      <div className="w-full flex justify-center mt-20">
+        <Button text="Explorer les cours" />
       </div>
     </section>
   );

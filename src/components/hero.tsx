@@ -38,22 +38,22 @@ export const Hero = () => {
             <Button text="Commencer gratuitement" variant="outline" />
           </div>
         </div>
-        <div className="relative w-full h-[447px] md:h-[547px] lg:h-[647px]  overflow-hidden transition-all">
+        <div className="relative w-full h-[500px] md:h-[600px] lg:h-[647px]  overflow-hidden transition-all">
           <div className="w-80 h-80 absolute top-20 right-14 bg-[radial-gradient(50%_50%_at_50%_50%,rgba(52,111,228,0.3)_0%,rgba(187,211,242,0)_100%)]" />
           <div className="w-80 h-80 absolute bottom-28 left-0.5 bg-[radial-gradient(50%_50%_at_50%_50%,rgba(255,167,34,0.3)_0%,rgba(255,167,34,0)_100%)]" />
           <Image
             src={"/images/hero_2.png"}
             alt="Rejoignez nous"
-            width={179}
-            height={104}
-            className=" absolute object-cover right-12 top-60 z-10 hidden lg:block"
+            width={169}
+            height={94}
+            className=" absolute object-cover right-0 md:right-10 lg:right-12 top-60 z-10"
           />
           <Image
             src={"/images/hero_1.png"}
             alt="Maîtriser photoshop"
-            width={255}
-            height={153}
-            className=" absolute object-cover left-0 bottom-32 z-10 hidden lg:block"
+            width={205}
+            height={103}
+            className=" absolute object-cover left-0 bottom-[20%] z-10"
           />
           <Image
             src={"/icons/hero_image_vector.svg"}
@@ -66,7 +66,7 @@ export const Hero = () => {
             src={"/images/hero.png"}
             fill
             alt="hero"
-            className="object-contain "
+            className="object-cover "
           />
         </div>
       </div>
