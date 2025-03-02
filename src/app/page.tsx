@@ -1,4 +1,5 @@
 import { CoursesCategories } from "@/components/courses-categoies";
+import FeaturedCourses from "@/components/featured-courses";
 import { Hero } from "@/components/hero";
 import UserFeedback from "@/components/user-feedback";
 import { WhyChooseUs } from "@/components/why-choose-us";
@@ -10,6 +11,7 @@ export default function HomePage() {
       <CoursesCategories />
       <WhyChooseUs />
       <UserFeedback />
+      <FeaturedCourses />
     </main>
   );
 }
