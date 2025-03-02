@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Open_Sans, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
+import Footer from "@/components/footer";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -24,9 +25,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={`${openSans.variable} ${playfairDisplay.variable} font-openSans`}>
-        <Navbar/>
-        {children}</body>
+      <body
+        className={`${openSans.variable} ${playfairDisplay.variable} font-openSans`}
+      >
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
